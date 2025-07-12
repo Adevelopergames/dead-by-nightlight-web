@@ -73,16 +73,15 @@ body {
 .sidebar a,
 .indice-lateral a {
   text-decoration: none;
-  color: #ccc;
+  color: #ffffff; /* blanco por defecto */
   transition: color 0.3s;
 }
 
 .sidebar a.activo,
 .sidebar a:hover,
 .indice-lateral a:hover {
-  color: #ff4c4c;
+  color: #ffff00; /* amarillo al pasar el cursor */
 }
-
 /* Contenido principal */
 .contenido {
   background-color: #1f1f1f;
