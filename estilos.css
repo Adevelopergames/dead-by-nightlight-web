@@ -8,47 +8,24 @@ body {
   line-height: 1.6;
 }
 
-/* Contenedor central */
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* Encabezado principal */
-.hero {
-  background: linear-gradient(180deg, #000, #1a1a1a);
-  padding: 60px 20px;
-  text-align: center;
-  border-bottom: 4px solid #c40000;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  color: #fff;
-  letter-spacing: 2px;
-}
-
-.hero .subtitulo {
-  color: #ccc;
-  font-size: 1.2rem;
-}
-
-/* Barra de navegación */
+/* Barra de navegación superior */
 .navbar {
   background-color: #1a1a1a;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 2px solid #333;
 }
 
-.navbar .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.navbar .logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.nav-link {
-  padding: 15px 20px;
+.navbar .nav-links a {
+  margin-left: 20px;
   color: #ccc;
   text-decoration: none;
   font-weight: 600;
@@ -56,45 +33,131 @@ body {
   transition: color 0.2s ease;
 }
 
-.nav-link:hover {
+.navbar .nav-links a:hover {
   color: #fff;
 }
 
-.nav-link.activo {
-  color: #c40000;
+/* Layout general con 3 columnas */
+.layout {
+  display: flex;
+  min-height: calc(100vh - 60px);
 }
 
-/* Secciones */
+/* Menú lateral izquierdo */
+.sidebar {
+  width: 250px;
+  background-color: #151515;
+  padding: 20px;
+  border-right: 2px solid #222;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  transition: background 0.2s;
+  color: #ccc;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.activo {
+  background-color: #272727;
+  color: #fff;
+}
+
+/* Contenido principal */
+.contenido {
+  flex: 1;
+  padding: 30px;
+  max-width: 900px;
+}
+
+/* Índice lateral derecho fijo */
+.indice-lateral {
+  width: 200px;
+  padding: 20px;
+  position: sticky;
+  top: 80px;
+  align-self: flex-start;
+  height: fit-content;
+}
+
+.indice-lateral h3 {
+  font-size: 16px;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.indice-lateral ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.indice-lateral ul li {
+  margin-bottom: 8px;
+}
+
+.indice-lateral ul li a {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.indice-lateral ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Contenido interno */
 section {
   margin-bottom: 60px;
+}
+
+section h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+  color: #fff;
 }
 
 section h2 {
   border-left: 6px solid #c40000;
   padding-left: 15px;
-  font-size: 2rem;
+  font-size: 22px;
   color: #fff;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 
 section h3 {
-  font-size: 1.4rem;
+  font-size: 18px;
   color: #c40000;
   margin-bottom: 10px;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+.imagen-update {
+  width: 100%;
+  margin: 20px 0;
+  border: 1px solid #444;
 }
 
-a {
-  color: #c40000;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+blockquote {
+  border-left: 4px solid #c40000;
+  padding-left: 15px;
+  color: #ccc;
+  margin: 20px 0;
 }
 
 /* Pie de página */
@@ -108,17 +171,24 @@ a:hover {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
   }
 
-  .nav-link {
-    padding: 10px;
-    font-size: 0.9rem;
+  .sidebar,
+  .indice-lateral {
+    width: 100%;
+    position: static;
+    border: none;
   }
 
-  section h2 {
-    font-size: 1.6rem;
+  .contenido {
+    max-width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
