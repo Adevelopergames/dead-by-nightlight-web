@@ -6,6 +6,42 @@
   <title>Dead By NightLight - Página Oficial</title>
   <link rel="stylesheet" href="estilos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+  .layout {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .sidebar-left,
+  .sidebar-right {
+    flex: 0 0 220px;
+  }
+
+  .contenido-central {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .imagen-update {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+  }
+
+  @media (max-width: 1000px) {
+    .layout {
+      flex-direction: column;
+    }
+
+    .sidebar-left,
+    .sidebar-right {
+      width: 100%;
+    }
+  }
+</style>
 </head>
 <body>
 
