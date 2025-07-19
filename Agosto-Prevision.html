@@ -7,47 +7,113 @@
   <link rel="stylesheet" href="estilos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
   <style>
-  .layout {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-    padding: 20px;
-  }
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/waves.png'), linear-gradient(to bottom, #a2d4f5, #ffffff);
+      background-repeat: repeat;
+      color: #222;
+    }
 
-  .sidebar-left,
-  .sidebar-right {
-    flex: 0 0 220px;
-  }
+    .navbar {
+      background-color: #00bcd4;
+      padding: 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-  .contenido-central {
-    flex: 1;
-    min-width: 0;
-  }
+    .logo {
+      font-size: 26px;
+      font-weight: 600;
+    }
 
-  .imagen-update {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px 0;
-  }
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fffde7;
+    }
 
-  @media (max-width: 1000px) {
     .layout {
-      flex-direction: column;
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 20px;
+      padding: 20px;
     }
 
     .sidebar-left,
     .sidebar-right {
-      width: 100%;
+      flex: 0 0 220px;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-  }
-</style>
+
+    .contenido-central {
+      flex: 1;
+      min-width: 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .imagen-update {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+      border: 2px solid #00acc1;
+      border-radius: 10px;
+    }
+
+    footer.footer {
+      background-color: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid #03a9f4;
+    }
+
+    a {
+      color: #ff9800;
+    }
+
+    h1, h2 {
+      color: #00796b;
+    }
+
+    blockquote {
+      background: #ffecb3;
+      color: #795548;
+      border-left: 5px solid #ffb300;
+      padding: 10px 20px;
+      margin: 20px 0;
+      font-style: italic;
+    }
+
+    @media (max-width: 1000px) {
+      .layout {
+        flex-direction: column;
+      }
+
+      .sidebar-left,
+      .sidebar-right {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
+  <!-- Canción de la Página Web -->
+  <audio src="Canción de la tienda de DbN.mp3" autoplay loop></audio>
 
   <!-- Barra superior -->
   <header class="navbar">
-    <div class="logo">DEAD BY NIGHTLIGHT</div>
+    <div class="logo">🌴 DEAD BY NIGHTLIGHT</div>
     <nav class="nav-links">
       <a href="https://adevelopergames.github.io/dead-by-nightlight-web/index.html">Inicio</a>
       <a href="https://adevelopergames.github.io/dead-by-nightlight-web/eventos.html">Eventos</a>
@@ -55,14 +121,14 @@
     </nav>
   </header>
 
-<!-- Layout general -->
+  <!-- Layout general -->
   <div class="layout">
     <!-- Menú izquierdo -->
     <aside class="sidebar-left">
-      <h2>Registro de Parches del Desarrollador</h2>
+      <h2>🌞 Registro de Parches</h2>
       <ul>
-        <li><a style="color: white;" href="https://adevelopergames.github.io/dead-by-nightlight-web/index.html">Julio 2025</a></li>
-        <li><a style="color: white;" href="https://adevelopergames.github.io/dead-by-nightlight-web/Agosto-Prevision.html">Agosto 2025</a></li>
+        <li><a href="https://adevelopergames.github.io/dead-by-nightlight-web/index.html">Julio 2025</a></li>
+        <li><a href="https://adevelopergames.github.io/dead-by-nightlight-web/Agosto-Prevision.html">Agosto 2025</a></li>
       </ul>
     </aside>
 
@@ -70,30 +136,33 @@
     <main class="contenido-central">
       <section id="julio2025">
         <img src="banner.png" alt="Imagen Banner de la Web" class="imagen-update">
-        <h1 style="color: red;">Hoja de Ruta | Agosto 2025</h1>
+        <h1>🏖️ Hoja de Ruta | Agosto 2025</h1>
         <small>Última actualización de este apartado: 13 de julio, 2025</small>
         <p><small>Escrito por @Adeveloper_games (Administrador)</small></p>
-        
-        <h2 id="nuevas-funciones" style="color: red;">COMENTARIOS IMPORANTES</h2>
-        <p>Desde este apartado, podreís leer cuales son exactamente mis planes tras haber cancelado el lanzamiento que supuestamente iba a salir el Domingo 15 de Junio y no se pudo por problemas técnicos.</p>
-        <p>Pocos de vosotros, los lectores. A menos que no seaís cercanos al desarrollo profundo, sabreís que el 20 de Agosto del 2021 nació y empezó el desarrollo de Dead By NightLight en Roblox Studio. Todo apunta, tal y como avanza el desarrollo y planes de reforma en sacar el juego esta vez sí, sin rodeos ni mentiras ni "problemas técnicos", antes del 20 de Agosto sin concretar una fecha.</p>
-<p> Para que así, una vez "saliera" el juego, el 20 de Agosto, liberar Dead By NightLight de su versión BETA. Generalmente para marcar un hito en mi pequeña y minuscula historia como desarrollador en Roblox.
 
-        <blockquote style="color: yellow;">
-  Comentario Anónimo de un Desarrollador: <em>"Yo no soy el más indicado para opinar sobre esto pero.. ideas, planes, inspiración y dedicación. De momento, no ha faltado."</em>
-</blockquote>
+        <h2 id="nuevas-funciones">☀️ COMENTARIOS IMPORTANTES</h2>
+        <p>Desde este apartado, podreís leer cuales son exactamente mis planes tras haber cancelado el lanzamiento que supuestamente iba a salir el Domingo 15 de Junio y no se pudo por problemas técnicos.</p>
+        <p>El desarrollo de Dead By NightLight comenzó un 20 de agosto del 2021. La meta es lanzar oficialmente el juego antes de esa misma fecha en este 2025. Una especie de celebración veraniega del progreso como desarrollador.</p>
+
+        <blockquote>
+          Comentario Anónimo de un Desarrollador: <em>"Yo no soy el más indicado para opinar sobre esto pero... ideas, planes, inspiración y dedicación. De momento, no ha faltado."</em>
+        </blockquote>
+
         <img src="julio2025.png" alt="Imagen actualización julio 2025" class="imagen-update">
       </section>
-      
-      <section id="julio2025">
-        <h2 id="nuevas-funciones" style="color: red;">POSIBLES PREGUNTAS FRECUENTES</h2>
-        <p>Posiblemente, si habeís leído el Parche de Desarrollador del mes de Julio, habreís visto que hemos anunciado otro cambio de experiencia de los 5 que ya ha tenido. Todo esto conlleva la baja experiencia y el camino que he ido recorriendo y aprendiendo sobre la marcha. Yendo al grano, sí, ha cambiado de experiencia y todas las antiguas han desaparecido de mi perfil entonces tan solo yendo a mi perfil: @Adeveloper_games en Roblox, encontrareís la experiencia que se llama "Dead By NightLight [NUEVO JUEGO]". </p>
-<p> </p>
-<p> Si he recargado monedas o las he obtenido de manera in-cierta, ¿las recuperaré en la nueva experiencia?        <strong> La respuesta </strong> es NO. Si las monedas fueron obtenidas de manera in-cierta, esas no se recuperarán y serán perdidas en el abismo de la Niebla. <strong> PERO </strong> si las monedas fueron compradas mediante el gamepass o tienda del juego anterior si se podrán recuperar mediante un código especial en la Tienda que será obsequiado a "x" jugador que presente una reclamación en el servidor de Discord o envie un correo con el Asunto: "Recuperación de Monedas" al correo "deadbynightlightstudios@gmail.com".
 
-        <blockquote style="color: yellow;">
-  Comentario del Administrador: <em>"La recuperación de monedas recordad, o por el servidor de Discord o por correo electrónico."</em>
-</blockquote>
+      <section id="julio2025">
+        <h2>🌊 POSIBLES PREGUNTAS FRECUENTES</h2>
+        <p>Si habéis leído el Parche de Desarrollador del mes de Julio, sabréis que se anunció otro cambio de experiencia. Esto refleja la evolución que ha tenido el juego y lo que se ha aprendido en el proceso.</p>
+        <p>La experiencia actual puede encontrarse en el perfil @Adeveloper_games bajo el nombre "Dead By NightLight [NUEVO JUEGO]".</p>
+
+        <p><strong>¿Recuperaré mis monedas del juego anterior?</strong><br>
+        No si fueron obtenidas de forma incierta. Pero si fueron adquiridas legalmente mediante Gamepass, podrán recuperarse a través de un código especial solicitándolo por Discord o correo.</p>
+
+        <blockquote>
+          Comentario del Administrador: <em>"La recuperación de monedas recordad, o por el servidor de Discord o por correo electrónico."</em>
+        </blockquote>
+
         <img src="julio2025.png" alt="Imagen actualización julio 2025" class="imagen-update">
       </section>
     </main>
