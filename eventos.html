@@ -7,41 +7,91 @@
   <link rel="stylesheet" href="estilos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
   <style>
-  .layout {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-    padding: 20px;
-  }
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png'), linear-gradient(#0d0d0d, #1a0000);
+      background-repeat: repeat;
+      color: #f5f5f5;
+    }
 
-  .sidebar-left,
-  .sidebar-right {
-    flex: 0 0 220px;
-  }
+    .navbar {
+      background-color: #330000;
+      padding: 20px;
+      color: orange;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #ff6600;
+    }
 
-  .contenido-central {
-    flex: 1;
-    min-width: 0;
-  }
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+    }
 
-  .imagen-update {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px 0;
-  }
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ffcc66;
+    }
 
-  @media (max-width: 1000px) {
     .layout {
-      flex-direction: column;
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 20px;
+      padding: 20px;
     }
 
     .sidebar-left,
     .sidebar-right {
-      width: 100%;
+      flex: 0 0 220px;
+      background-color: rgba(255, 102, 0, 0.1);
+      padding: 15px;
+      border: 1px solid #ff6600;
+      border-radius: 8px;
     }
-  }
-</style>
+
+    .contenido-central {
+      flex: 1;
+      min-width: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #ff550066;
+    }
+
+    .imagen-update {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+      border: 3px solid #ff6600;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #1a0000;
+      color: white;
+      padding: 20px;
+      border-top: 2px solid #ff6600;
+    }
+
+    a {
+      color: #ff9933;
+    }
+
+    @media (max-width: 1000px) {
+      .layout {
+        flex-direction: column;
+      }
+
+      .sidebar-left,
+      .sidebar-right {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -49,7 +99,7 @@
   
   <!-- Barra superior -->
   <header class="navbar">
-    <div class="logo">DEAD BY NIGHTLIGHT</div>
+    <div class="logo">🎃 DEAD BY NIGHTLIGHT</div>
     <nav class="nav-links">
       <a href="https://adevelopergames.github.io/dead-by-nightlight-web/index.html">Inicio</a>
       <a href="https://adevelopergames.github.io/dead-by-nightlight-web/Eventos.html">Eventos</a>
@@ -57,14 +107,14 @@
     </nav>
   </header>
 
-<!-- Layout general -->
+  <!-- Layout general -->
   <div class="layout">
     <!-- Menú izquierdo -->
     <aside class="sidebar-left">
-      <h2>Registro de Parches del Desarrollador</h2>
+      <h2>🎃 Registro de Parches 🎄</h2>
       <ul>
-        <li><a style="color: white;" href="https://adevelopergames.github.io/dead-by-nightlight-web/eventos.html">Evento de Octubre 2025</a></li>
-        <li><a style="color: white;" href="https://adevelopergames.github.io/dead-by-nightlight-web/eventonavidad25.html">Evento de Navidad 2025</a></li>
+        <li><a href="https://adevelopergames.github.io/dead-by-nightlight-web/eventos.html">Evento de Octubre 2025</a></li>
+        <li><a href="https://adevelopergames.github.io/dead-by-nightlight-web/eventonavidad25.html">Evento de Navidad 2025</a></li>
       </ul>
     </aside>
 
@@ -72,33 +122,32 @@
     <main class="contenido-central">
       <section id="julio2025">
         <img src="banner.png" alt="Imagen Banner de la Web" class="imagen-update">
-        <h1 style="color: red;">Futuro Evento de Octubre | Octubre 2025</h1>
+        <h1 style="color: #ff3300;">🎃 Futuro Evento de Haloween | Octubre 2025</h1>
         <small>Última modificación: 14 de julio del 2025</small>
         <p><small>Escrito y Modificado por @Adeveloper_games (Administrador)</small></p>
         
-        <h2 id="nuevas-funciones" style="color: orange;">EVENTO DE HALLOWEEN</h2>
+        <h2 id="nuevas-funciones" style="color: #ff9900;">EVENTO DE HALLOWEEN</h2>
         <p>Si el juego sale como se está baticinando, en Agosto. En Octubre, me gustaría sacar cierto parche de Halloween como harán la mayoría de juegos ya sean de Roblox o no. Mi evento de Halloween consistirá en lo siguiente:</p>
-        <p> </p>
-        <p>Actualmente, DbN tiene 3 tipos de moneda. En el Evento de Halloween, habrán 4. La nueva moneda, Dulces de Caramelo. Con ellos que se obtendrán de manera gratuita o pagando, se podrán comprar cosméticos para los personajes, emblemas especiales, armas diferentes, entre otros...</p>
-        <p>De por sí, se habilitarán dos nuevas variantes de mapa que se revelaron en el Teaser 2 que salió en Junio. La Fabrica de Leña con el Clima de Lluvia Sangrienta y el Laboratorio Nacional de los EE.UU en Lluvia Sangrienta también. Dichos climas, no serán modificables por los jugadores mediante las ofrendas/tarjetas.</p>
-        <p>Tampoco, no podrían faltar alguna que otra calabaza y un ambiente más grotesco u oscuro en los mapas así que dadlo por hecho de que espero que sea un buen evento de Halloween. Por el momento, yo me despido y os mantendré informados cuando llegue el momento...</p>
-        <blockquote style="color: yellow;">
-  Comentario del Administrador: <em>"En 2019, yo tuve un Obby. ¿Típico parkour en Roblox no? Siempre soñé en hacer eventos de este estilo y al parecer estoy más cerca de lo que el Adeveloper_games del 2019 hubiera deseado."</em>
-</blockquote>
+        <p>Actualmente, DbN tiene 3 tipos de moneda. En el Evento de Halloween, habrán 4. La nueva moneda, <strong>Dulces de Caramelo</strong>. Con ellos que se obtendrán de manera gratuita o pagando, se podrán comprar cosméticos para los personajes, emblemas especiales, armas diferentes, entre otros...</p>
+        <p>Se habilitarán dos nuevas variantes de mapa que se revelaron en el Teaser 2 que salió en Junio: La Fábrica de Leña con el Clima de Lluvia Sangrienta y el Laboratorio Nacional de los EE.UU también con Lluvia Sangrienta. Dichos climas, no serán modificables por los jugadores.</p>
+        <p>Por supuesto, no faltarán calabazas, niebla densa y una ambientación grotesca u oscura. Espero que este evento sea digno de la fecha. ¡Nos vemos en Halloween!</p>
+        <blockquote style="color: #ffa500;">
+          Comentario del Administrador: <em>"En 2019, yo tuve un Obby. ¿Típico parkour en Roblox no? Siempre soñé en hacer eventos de este estilo y al parecer estoy más cerca de lo que el Adeveloper_games del 2019 hubiera deseado."</em>
+        </blockquote>
         <img src="julio2025.png" alt="Imagen actualización julio 2025" class="imagen-update">
       </section>
     </main>
   </div>
 
- <!-- Pie -->
-<footer style="text-align: center; padding: 20px;">
-  <p>&copy; 2025 Dead By NightLight // Adeveloper_games. Todos los derechos reservados.</p>
-  <p>
-    Síguenos en:
-    <a style="color: red;" href="https://www.youtube.com/@Adeveloper_games" target="_blank" rel="noopener noreferrer">YouTube</a> |
-    <a style="color: white;" href="https://x.com/Adeveloper52435" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
-  </p>
-</footer>
+  <!-- Pie -->
+  <footer>
+    <p>&copy; 2025 Dead By NightLight // Adeveloper_games. Todos los derechos reservados.</p>
+    <p>
+      Síguenos en:
+      <a href="https://www.youtube.com/@Adeveloper_games" target="_blank" rel="noopener noreferrer">YouTube</a> |
+      <a href="https://x.com/Adeveloper52435" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+    </p>
+  </footer>
 
 </body>
 </html>
