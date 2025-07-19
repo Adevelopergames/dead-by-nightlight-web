@@ -3,9 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dead By NightLight - Actualizaciones</title>
+  <title>Dead By NightLight - Página Oficial</title>
   <link rel="stylesheet" href="estilos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+  .layout {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .sidebar-left,
+  .sidebar-right {
+    flex: 0 0 220px;
+  }
+
+  .contenido-central {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .imagen-update {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+  }
+
+  @media (max-width: 1000px) {
+    .layout {
+      flex-direction: column;
+    }
+
+    .sidebar-left,
+    .sidebar-right {
+      width: 100%;
+    }
+  }
+</style>
 </head>
 <body>
 
@@ -13,21 +49,22 @@
   <header class="navbar">
     <div class="logo">DEAD BY NIGHTLIGHT</div>
     <nav class="nav-links">
-      <a href="#">Inicio</a>
-      <a href="#">Noticias</a>
-      <a style="color: red; href="#">Actualizaciones</a>
-      <a style="color: red; href="#">Comunidad</a>
-    </nav>
-  </header>
-
-  <header class="navbar">
-    <div class="logo">DEAD BY NIGHTLIGHT</div>
-    <nav class="nav-links">
       <a href="https://adevelopergames.github.io/dead-by-nightlight-web/index.html">Inicio</a>
-      <a href="https://adevelopergames.github.io/dead-by-nightlight-web/Eventos.html">Eventos</a>
+      <a href="https://adevelopergames.github.io/dead-by-nightlight-web/eventos.html">Eventos</a>
       <a href="https://adevelopergames.github.io/dead-by-nightlight-web/Agosto-Prevision.html">Hojas de Ruta</a>
     </nav>
   </header>
+
+<!-- Layout general -->
+  <div class="layout">
+    <!-- Menú izquierdo -->
+    <aside class="sidebar-left">
+      <h2>Registro de Parches del Desarrollador</h2>
+      <ul>
+        <li><a style="color: white;" href="https://adevelopergames.github.io/dead-by-nightlight-web/index.html">Julio 2025</a></li>
+        <li><a style="color: white;" href="https://adevelopergames.github.io/dead-by-nightlight-web/Agosto-Prevision.html">Agosto 2025</a></li>
+      </ul>
+    </aside>
 
     <!-- Contenido principal -->
     <main class="contenido-central">
