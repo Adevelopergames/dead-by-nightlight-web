@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dead By NightLight - Página Oficial</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+      color: #eee;
+    }
+
+    .navbar {
+      background-color: #111;
+      padding: 20px;
+      color: #f44336;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 600;
+      color: #f44336;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ddd;
+    }
+
+    .nav-links a:hover {
+      color: #f44336;
+    }
+
+    .layout {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .sidebar-left,
+    .sidebar-right {
+      flex: 0 0 220px;
+      background-color: rgba(30, 30, 30, 0.9);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .contenido-central {
+      flex: 1;
+      min-width: 0;
+      background-color: rgba(40, 40, 40, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    }
+
+    .imagen-update {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+      border: 2px solid #f44336;
+      border-radius: 10px;
+    }
+
+    footer.footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid #f44336;
+    }
+
+    a {
+      color: #f44336;
+    }
+
+    h1, h2 {
+      color: #f44336;
+    }
+
+    blockquote {
+      background: #222;
+      color: #bbb;
+      border-left: 5px solid #f44336;
+      padding: 10px 20px;
+      margin: 20px 0;
+      font-style: italic;
+    }
+
+    @media (max-width: 1000px) {
+      .layout {
+        flex-direction: column;
+      }
+
+      .sidebar-left,
+      .sidebar-right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Canción de la Página Web -->
+  <audio src="Canción de la tienda de DbN.mp3" autoplay loop></audio>
+
+  <!-- Barra superior -->
+  <header class="navbar">
+    <div class="logo">DEAD BY NIGHTLIGHT</div>
+    <nav class="nav-links">
+      <a href="https://adevelopergames.github.io/dead-by-nightlight-web/index.html">Inicio</a>
+      <a href="https://adevelopergames.github.io/dead-by-nightlight-web/eventos.html">Eventos</a>
+      <a href="https://adevelopergames.github.io/dead-by-nightlight-web/Agosto-Prevision.html">Hojas de Ruta</a>
+    </nav>
+  </header>
+
+  <!-- Layout general -->
+  <div class="layout">
+    <!-- Menú izquierdo -->
+    <aside class="sidebar-left">
+      <h2>📜 Registro de Parches</h2>
+      <ul>
+        <li><a href="https://adevelopergames.github.io/dead-by-nightlight-web/index.html">Julio 2025</a></li>
+        <li><a href="https://adevelopergames.github.io/dead-by-nightlight-web/Agosto-Prevision.html">Agosto 2025</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="contenido-central">
+      <section id="julio2025">
+        <img src="banner.png" alt="Imagen Banner de la Web" class="imagen-update">
+        <h1>📌 Hoja de Ruta | Agosto 2025</h1>
+        <small>Última actualización de este apartado: 13 de julio, 2025</small>
+        <p><small>Escrito por @Adeveloper_games (Administrador)</small></p>
+
+        <h2 id="nuevas-funciones">🩸 COMENTARIOS IMPORTANTES</h2>
+        <p>Desde este apartado, podréis leer cuáles son exactamente mis planes tras haber cancelado el lanzamiento del Domingo 15 de Junio.</p>
+        <p>El desarrollo de Dead By NightLight comenzó un 20 de agosto del 2021. La meta es lanzar oficialmente el juego antes de esa misma fecha en este 2025.</p>
+
+        <blockquote>
+          Comentario Anónimo de un Desarrollador: <em>"Yo no soy el más indicado para opinar sobre esto pero... ideas, planes, inspiración y dedicación. De momento, no ha faltado."</em>
+        </blockquote>
+
+        <img src="julio2025.png" alt="Imagen actualización julio 2025" class="imagen-update">
+      </section>
+
+      <section id="julio2025">
+        <h2>💀 POSIBLES PREGUNTAS FRECUENTES</h2>
+        <p>Si habéis leído el Parche de Julio, sabréis que se anunció otro cambio de experiencia. Esto refleja la evolución que ha tenido el juego y lo que se ha aprendido en el proceso.</p>
+        <p>La experiencia actual puede encontrarse en el perfil @Adeveloper_games bajo el nombre "Dead By NightLight [NUEVO JUEGO]".</p>
+
+        <p><strong>¿Recuperaré mis monedas del juego anterior?</strong><br>
+        No si fueron obtenidas de forma incierta. Pero si fueron adquiridas legalmente mediante Gamepass, podrán recuperarse a través de un código especial.</p>
+
+        <blockquote>
+          Comentario del Administrador: <em>"La recuperación de monedas recordad, o por el servidor de Discord o por correo electrónico."</em>
+        </blockquote>
+
+        <img src="julio2025.png" alt="Imagen actualización julio 2025" class="imagen-update">
+      </section>
+    </main>
+  </div>
+
+ <!-- Pie -->
+<footer style="text-align: center; padding: 20px; background:#111; border-top:3px solid #f44336;">
+  <p>&copy; 2025 Dead By NightLight // Adeveloper_games. Todos los derechos reservados.</p>
+  <p>
+    Síguenos en:
+    <a style="color: red;" href="https://www.youtube.com/@Adeveloper_games" target="_blank" rel="noopener noreferrer">YouTube</a> |
+    <a style="color: #1DA1F2;" href="https://x.com/Adeveloper52435" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+  </p>
+</footer>
+
+</body>
+</html>
