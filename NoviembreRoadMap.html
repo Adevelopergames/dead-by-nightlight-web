@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dead By NightLight - Página Oficial</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+      color: #eee;
+    }
+
+    .navbar {
+      background-color: #111;
+      padding: 20px;
+      color: #f44336;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 600;
+      color: #f44336;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ddd;
+    }
+
+    .nav-links a:hover {
+      color: #f44336;
+    }
+
+    .layout {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .sidebar-left,
+    .sidebar-right {
+      flex: 0 0 220px;
+      background-color: rgba(30, 30, 30, 0.9);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .contenido-central {
+      flex: 1;
+      min-width: 0;
+      background-color: rgba(40, 40, 40, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    }
+
+    .imagen-update {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+    }
+
+    footer.footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid #f44336;
+    }
+
+    a {
+      color: #f44336;
+    }
+
+    h1, h2 {
+      color: #f44336;
+    }
+
+    blockquote {
+      background: #222;
+      color: #bbb;
+      border-left: 5px solid #f44336;
+      padding: 10px 20px;
+      margin: 20px 0;
+      font-style: italic;
+    }
+
+    @media (max-width: 1000px) {
+      .layout {
+        flex-direction: column;
+      }
+
+      .sidebar-left,
+      .sidebar-right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Canción de la Página Web -->
+  <audio src="Canción de la tienda de DbN.mp3" autoplay loop></audio>
+
+  <!-- Barra superior -->
+  <header class="navbar">
+    <div class="logo">DEAD BY NIGHTLIGHT</div>
+    <nav class="nav-links">
+      <a href="https://adevelopergames.github.io/dead-by-nightlight-web/index.html">Inicio</a>
+    </nav>
+  </header>
+
+  <!-- Layout general -->
+  <div class="layout">
+    <!-- Menú izquierdo -->
+    <aside class="sidebar-left">
+      <h2>📜 Registro de Parches</h2>
+      <ul>
+        <li><a href="https://adevelopergames.github.io/dead-by-nightlight-web/index.html">Julio 2025</a></li>
+        <li><a href="https://adevelopergames.github.io/dead-by-nightlight-web/Agosto-Prevision.html">Agosto 2025</a></li>
+        <li><a href="https://adevelopergames.github.io/dead-by-nightlight-web/SeptiembreRoadMap.html">Septiembre 2025</a></li>
+        <li><a href="https://adevelopergames.github.io/dead-by-nightlight-web/OctubreRoadMap.html">Octubre 2025 [ACTUAL]</a></li>
+        <li><a href="https://adevelopergames.github.io/dead-by-nightlight-web/NoviembreRoadMap.html">Noviembre 2025 [PRÓXIMO REGISTRO]</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="contenido-central">
+      <section id="octubre2025">
+        <img src="banner.png" alt="Imagen Banner de la Web" class="imagen-update">
+        <h1>📌 ¿Cuál será el plan, después del Evento de Halloween? | Octubre 2025</h1>
+        <small>Última actualización de este apartado: 21 de Octubre, 2025</small>
+        <p><small>Escrito por @Adeveloper_games (Administrador)</small></p>
+
+        <ul>
+          <li>El plan principal y el cuál los últimos días me lo estoy replanteando, era si volver a cerrar el juego o no tras terminar el periodo de la BETA 1.1. Aquí abajo os digo cual es la previsión del 21 de Octubre del 2025:
+            <ul>
+              <li>- El juego se mantendrá abierto y los desarrolladores, pasarán a desarrollar a un place distinto en caso de crear nuevas mecanicas o  aspectos.</li>
+              <li>- Actualizaciones Semanales o cada 14 días. (Nuestro objetivo es mostrar a la pequeña comunidad como estamos avanzando de progreso. En cada movimiento de ficha crucial que hacemos)</li>
+              <li>- El mismo día que supuestamente, se terminaba el evento de halloween, se hará una reunión del equipo desarrollador para debatirlo si extenderlo o no. Nuestra decisión, dependerá de las cifras obtenidas y no estamos hablando de robux generados sino de estadísticas.</li>
+              <li>- Un NERF generalizado al Modo AFK.</li>
+              <li>- Y lo más seguro, una tonelada de errores solucionados.</li>
+            </ul>
+        </ul>
+
+        <img src="julio2025.png" alt="Imagen actualización julio 2025" class="imagen-update">
+      </section>
+    </main>
+  </div>
+
+ <!-- Pie -->
+<footer style="text-align: center; padding: 20px; background:#111; border-top:3px solid #f44336;">
+  <p>&copy; 2025 Dead By NightLight // Adeveloper_games. Todos los derechos reservados.</p>
+  <p>
+    Síguenos en:
+    <a style="color: red;" href="https://www.youtube.com/@Adeveloper_games" target="_blank" rel="noopener noreferrer">YouTube</a> |
+    <a style="color: #1DA1F2;" href="https://x.com/Adeveloper52435" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+  </p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
