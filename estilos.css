@@ -181,3 +181,39 @@ footer {
   .nav-links { justify-content: flex-start; gap: 0.5rem; padding-top: 1rem; }
   .logo { font-size: 1.3rem; margin-bottom: 0.5rem; }
 }
+/* ===== Animación de carga personalizada ===== */
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #444;
+  border-top: 4px solid #ff4c4c;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 40px auto;
+  display: none;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Estados para simular carga */
+.cargando .contenido-central,
+.cargando .sidebar-left,
+.cargando .sidebar-right {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cargando .loader {
+  display: block;
+  animation: spin 1s linear infinite;
+}
+
+/* Cuando termina la carga */
+.cargado .contenido-central,
+.cargado .sidebar-left,
+.cargado .sidebar-right {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
