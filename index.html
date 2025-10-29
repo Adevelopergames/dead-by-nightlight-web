@@ -109,6 +109,28 @@
     }
   </style>
 </head>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const secciones = document.querySelectorAll(".sidebar-left, .sidebar-right, .contenido-central");
+
+  secciones.forEach(seccion => {
+    const loader = document.createElement("div");
+    loader.classList.add("loader");
+    seccion.insertBefore(loader, seccion.firstChild);
+
+    seccion.addEventListener("click", () => {
+      // Añadir clase de carga
+      seccion.classList.add("cargando");
+      
+      // Después de 2 segundos mostrar contenido
+      setTimeout(() => {
+        seccion.classList.remove("cargando");
+        seccion.classList.add("cargado");
+      }, 2000);
+    });
+  });
+});
+</script>
 <body>
   <!-- Canción de la Página Web -->
   <audio src="CanciónHalloweenDbN2025.mp3" autoplay loop></audio>
